@@ -1,61 +1,61 @@
-# wmd 0.1.26 (commit 604e733e21a100f0adc1b37b8ae888fa05c297fb), made by wmd's scripts/release.sh. Unsigned: no Developer ID, not notarized.
+# wmd 0.1.27 (commit 597e6b823e6b27e50f6a77cfd62cbfa4a7b0aeeb), made by wmd's scripts/release.sh. Unsigned: no Developer ID, not notarized.
 class Wmd < Formula
   desc "Docker Engine API compatible daemon and CLI that runs Linux containers in WebAssembly"
   homepage "https://github.com/threadedstack/wmd-releases"
-  url "https://github.com/threadedstack/wmd-releases/releases/download/v0.1.26/wmd", using: :nounzip
-  version "0.1.26"
-  sha256 "7a43087808668c7383e5aee770169e8335b6a6988ba59c4585fe3496cddf65d5"
+  url "https://github.com/threadedstack/wmd-releases/releases/download/v0.1.27/wmd", using: :nounzip
+  version "0.1.27"
+  sha256 "3a1a9413ee86487593ea1f6bd92f4731c01f47c316a5f309b03a51db20cfea82"
 
   depends_on arch: :arm64
   depends_on :macos
 
   resource "wmdd" do
-    url "https://github.com/threadedstack/wmd-releases/releases/download/v0.1.26/wmdd", using: :nounzip
-    sha256 "bf09d8c50c783a12b322f23d55ebd13167ec1bdacaf6fe2a999e4df8e91e94b5"
+    url "https://github.com/threadedstack/wmd-releases/releases/download/v0.1.27/wmdd", using: :nounzip
+    sha256 "326e19282a7e02b4bab5ce9adf99b5d9c76f2e097bbe155fed8089494ca6e99c"
   end
 
   resource "wmd-run" do
-    url "https://github.com/threadedstack/wmd-releases/releases/download/v0.1.26/wmd-run", using: :nounzip
-    sha256 "28fdd8b5a61c90f656a966d0307005557108cbfde3f0acc792088edbfd6f4112"
+    url "https://github.com/threadedstack/wmd-releases/releases/download/v0.1.27/wmd-run", using: :nounzip
+    sha256 "7f9ad20828273a350f5431ce93a9b7539c3783490b961e3e07c627226e716cc4"
   end
 
   resource "wmd-exe-stub" do
-    url "https://github.com/threadedstack/wmd-releases/releases/download/v0.1.26/wmd-exe-stub", using: :nounzip
-    sha256 "0f0e053d27ec91eb5f76982eea9b6da3cab86aff29b6ad2c405cda8d75893077"
+    url "https://github.com/threadedstack/wmd-releases/releases/download/v0.1.27/wmd-exe-stub", using: :nounzip
+    sha256 "766e98148b744f0d35e3520dcfba674284941b078d99e8669d8b63d19b04745a"
   end
 
   resource "wmd-relay" do
-    url "https://github.com/threadedstack/wmd-releases/releases/download/v0.1.26/wmd-relay", using: :nounzip
-    sha256 "f2efb67c75194d097c7add3cebdb7b5822c1ede03437e7e576e93c8e1be5d598"
+    url "https://github.com/threadedstack/wmd-releases/releases/download/v0.1.27/wmd-relay", using: :nounzip
+    sha256 "df6b851bdbee5da39720ccc150f4732c7d34d2919cb01d2b33c54a5d1814cc90"
   end
 
   resource "vm.wasm" do
-    url "https://github.com/threadedstack/wmd-releases/releases/download/v0.1.26/vm.wasm", using: :nounzip
-    sha256 "4292c9a5981dda7215acd66ee6023cacd4bd502b379b469ef9a3bb606eb1309d"
+    url "https://github.com/threadedstack/wmd-releases/releases/download/v0.1.27/vm.wasm", using: :nounzip
+    sha256 "1553b50b591cc579d2ce24e79c3fd72360db34a8a337c108e25e515a5eb920b6"
   end
 
   resource "Image" do
-    url "https://github.com/threadedstack/wmd-releases/releases/download/v0.1.26/Image", using: :nounzip
+    url "https://github.com/threadedstack/wmd-releases/releases/download/v0.1.27/Image", using: :nounzip
     sha256 "6952a8d4f1bafec9c3e3b17e2c4af20ab5de8a7086956d087979804be2a01353"
   end
 
   resource "Image-4k" do
-    url "https://github.com/threadedstack/wmd-releases/releases/download/v0.1.26/Image-4k", using: :nounzip
+    url "https://github.com/threadedstack/wmd-releases/releases/download/v0.1.27/Image-4k", using: :nounzip
     sha256 "47a1dcf06bcd1cc31fb4f02adbd1e035bc9e9a243fe57f3efd71b4a287581de2"
   end
 
   resource "initramfs.cpio.gz" do
-    url "https://github.com/threadedstack/wmd-releases/releases/download/v0.1.26/initramfs.cpio.gz", using: :nounzip
+    url "https://github.com/threadedstack/wmd-releases/releases/download/v0.1.27/initramfs.cpio.gz", using: :nounzip
     sha256 "efa6eb2338cb01d87eeebce8035ed7a26b00edcfc3b9db963b38272715d2ee9d"
   end
 
   resource "features" do
-    url "https://github.com/threadedstack/wmd-releases/releases/download/v0.1.26/features", using: :nounzip
+    url "https://github.com/threadedstack/wmd-releases/releases/download/v0.1.27/features", using: :nounzip
     sha256 "9c3957469a8f03d7937f1dca7c5f4087d6511ee0ec681c6b1ddce640b34fa866"
   end
 
   resource "config" do
-    url "https://github.com/threadedstack/wmd-releases/releases/download/v0.1.26/config", using: :nounzip
+    url "https://github.com/threadedstack/wmd-releases/releases/download/v0.1.27/config", using: :nounzip
     sha256 "a70b9ee01f841c87eaa8270977db69fb3c2c9db8bc92aeb1f88c073c710eb3b0"
   end
 
@@ -82,6 +82,6 @@ class Wmd < Formula
   end
 
   test do
-    assert_match "build 604e733e", shell_output("#{bin}/wmd --version")
+    assert_match "build 597e6b82", shell_output("#{bin}/wmd --version")
   end
 end
