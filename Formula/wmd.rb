@@ -1,91 +1,91 @@
-# wmd 0.1.48 (commit c35d2418a684f2b2d6bb865549f151ba6c570150), made by wmd's scripts/release.sh. Unsigned: no Developer ID, not notarized.
+# wmd 0.1.49 (commit 6472edd8cc5495ced418b3d8760fdc0ee77c5d64), made by wmd's scripts/release.sh. Unsigned: no Developer ID, not notarized.
 class Wmd < Formula
   desc "Docker Engine API compatible daemon and CLI that runs Linux containers in WebAssembly"
   homepage "https://github.com/threadedstack/wmd-releases"
-  url "https://github.com/threadedstack/wmd-releases/releases/download/v0.1.48/wmd", using: :nounzip
-  version "0.1.48"
-  sha256 "c6676658908026b64d3d65e7c3ccec0792490602a9579db516fed417b0e9c5e4"
+  url "https://github.com/threadedstack/wmd-releases/releases/download/v0.1.49/wmd", using: :nounzip
+  version "0.1.49"
+  sha256 "1d652e71875de39c4b42c792dde36667f57f177ac293dbf35ad4e4b12a060074"
 
   depends_on arch: :arm64
   depends_on :macos
 
   resource "wmdd" do
-    url "https://github.com/threadedstack/wmd-releases/releases/download/v0.1.48/wmdd", using: :nounzip
-    sha256 "4fc8cb6602222317b01185e86e416a1391af8a2461fa70fcc753dbe2686af4b5"
+    url "https://github.com/threadedstack/wmd-releases/releases/download/v0.1.49/wmdd", using: :nounzip
+    sha256 "c03d8905663a963a1f74ec25b24dd80da3b919f721751eaa5015c4e2266ace55"
   end
 
   resource "wmd-run" do
-    url "https://github.com/threadedstack/wmd-releases/releases/download/v0.1.48/wmd-run", using: :nounzip
-    sha256 "ff3f81852c1f9004aa25d35efd2c38be718078a70993f726794a1870ca3cd797"
+    url "https://github.com/threadedstack/wmd-releases/releases/download/v0.1.49/wmd-run", using: :nounzip
+    sha256 "c802a483e3f03ed6c931bd5ef3d6c439005f006beb0e949f8cfdbc2dc26aac5f"
   end
 
   resource "wmd-exe-stub" do
-    url "https://github.com/threadedstack/wmd-releases/releases/download/v0.1.48/wmd-exe-stub", using: :nounzip
-    sha256 "1d43eb49057884db2051b0231f7fce460c54d56369f084c2875af037e18fd67e"
+    url "https://github.com/threadedstack/wmd-releases/releases/download/v0.1.49/wmd-exe-stub", using: :nounzip
+    sha256 "096631d0057dd1a04c7be8f982259a1183cf82702ba6af740dd560c5fb141cfc"
   end
 
   resource "wmd-relay" do
-    url "https://github.com/threadedstack/wmd-releases/releases/download/v0.1.48/wmd-relay", using: :nounzip
-    sha256 "264630ec99aab4a77b7646563b2e1f64e283565d69a089989bc00f248925f44e"
+    url "https://github.com/threadedstack/wmd-releases/releases/download/v0.1.49/wmd-relay", using: :nounzip
+    sha256 "78fa1e5ccd7a3af6e885585e6bda45dab9326451dcdc6e84d7d5cefdc4618166"
   end
 
   resource "vm.wasm" do
-    url "https://github.com/threadedstack/wmd-releases/releases/download/v0.1.48/vm.wasm", using: :nounzip
-    sha256 "7f94f411f4041834981deedb5b8bb7f8961a0cbb8fa896e15ce5ee99a94a2853"
+    url "https://github.com/threadedstack/wmd-releases/releases/download/v0.1.49/vm.wasm", using: :nounzip
+    sha256 "ec00c59a70add068305168952885ac3c637b0bd274c1c7a7c28aac9e24fcc3de"
   end
 
   resource "Image" do
-    url "https://github.com/threadedstack/wmd-releases/releases/download/v0.1.48/Image", using: :nounzip
-    sha256 "0f17a1a3941f8827396265906e7b23cd70a85212caec47c20915abd5a45e19fe"
+    url "https://github.com/threadedstack/wmd-releases/releases/download/v0.1.49/Image", using: :nounzip
+    sha256 "b7a8843d3469e2f5c32973ce2e6d663f90e07099ed2e9e9aee2ceac0e6a0685b"
   end
 
   resource "Image-4k" do
-    url "https://github.com/threadedstack/wmd-releases/releases/download/v0.1.48/Image-4k", using: :nounzip
-    sha256 "97ba5f7832895f2de857375d3802b9b016976258583613c4dbd903c271792e87"
+    url "https://github.com/threadedstack/wmd-releases/releases/download/v0.1.49/Image-4k", using: :nounzip
+    sha256 "55ab90773d080416f1539ae2caac0a49bb98e2bb34ce9384849725fb8e601551"
   end
 
   resource "initramfs.cpio.gz" do
-    url "https://github.com/threadedstack/wmd-releases/releases/download/v0.1.48/initramfs.cpio.gz", using: :nounzip
-    sha256 "1cac59f3a8bcf52a2b6b2d5769bf94dc237ec16c8b54df50686b4612bbe7bfef"
+    url "https://github.com/threadedstack/wmd-releases/releases/download/v0.1.49/initramfs.cpio.gz", using: :nounzip
+    sha256 "ac7c0fc194b059579943c3d8ceaa0757c3e3e248231c2ad779260e97d5084cd3"
   end
 
   resource "features" do
-    url "https://github.com/threadedstack/wmd-releases/releases/download/v0.1.48/features", using: :nounzip
-    sha256 "02693b8b6c099e10fdb7a092394102ee92971ce1e39d0d6e5327ff8be1d0ee74"
+    url "https://github.com/threadedstack/wmd-releases/releases/download/v0.1.49/features", using: :nounzip
+    sha256 "4dc6f2a114c7c87a67eb9f0fe53c52b6b8128bb30830a6be498432a3701587f4"
   end
 
   resource "config" do
-    url "https://github.com/threadedstack/wmd-releases/releases/download/v0.1.48/config", using: :nounzip
-    sha256 "a70b9ee01f841c87eaa8270977db69fb3c2c9db8bc92aeb1f88c073c710eb3b0"
+    url "https://github.com/threadedstack/wmd-releases/releases/download/v0.1.49/config", using: :nounzip
+    sha256 "0b5d7b47627a4b2c0fae2f2119f3f6ec6f15038c2d6a4068bda50f762d0c33c0"
   end
 
   resource "wmd-ccwrap-linux-arm64" do
-    url "https://github.com/threadedstack/wmd-releases/releases/download/v0.1.48/wmd-ccwrap-linux-arm64", using: :nounzip
-    sha256 "c066851318b1d9f292fa848a04b0771295dd6f0eac5c866af53166b7dc72f9f8"
+    url "https://github.com/threadedstack/wmd-releases/releases/download/v0.1.49/wmd-ccwrap-linux-arm64", using: :nounzip
+    sha256 "2a9ceca781090c2158ca040b4c8ef11e8a44415ab1fc1e55c5a5bbcaebfdf848"
   end
 
   resource "wmd-ccshim-linux-arm64" do
-    url "https://github.com/threadedstack/wmd-releases/releases/download/v0.1.48/wmd-ccshim-linux-arm64", using: :nounzip
-    sha256 "24d8a1a0b4da43a1ecf2e1426fb9761b266395b21d6639c8be5ffb258cb45117"
+    url "https://github.com/threadedstack/wmd-releases/releases/download/v0.1.49/wmd-ccshim-linux-arm64", using: :nounzip
+    sha256 "82ac9102965fac03e9ec9f98978945608f7bfab984a8e50ff5e6017af15530ec"
   end
 
   resource "ccache-linux-arm64" do
-    url "https://github.com/threadedstack/wmd-releases/releases/download/v0.1.48/ccache-linux-arm64", using: :nounzip
+    url "https://github.com/threadedstack/wmd-releases/releases/download/v0.1.49/ccache-linux-arm64", using: :nounzip
     sha256 "47f20c5b7cfc04da8deda7a7787f5565f500a9885448752bdb59b7dc8d98d575"
   end
 
   resource "ccache-LICENSE.txt" do
-    url "https://github.com/threadedstack/wmd-releases/releases/download/v0.1.48/ccache-LICENSE.txt", using: :nounzip
+    url "https://github.com/threadedstack/wmd-releases/releases/download/v0.1.49/ccache-LICENSE.txt", using: :nounzip
     sha256 "53c0ac34e61c628ee04b794f530be732b6181f5571f52a8aed447a3e41a6ccde"
   end
 
   resource "ccache-SOURCE.txt" do
-    url "https://github.com/threadedstack/wmd-releases/releases/download/v0.1.48/ccache-SOURCE.txt", using: :nounzip
-    sha256 "c96eacb4cd8a0808e98bef64f09ed1082be1cc7065b8d4496f396d85c9f4bde6"
+    url "https://github.com/threadedstack/wmd-releases/releases/download/v0.1.49/ccache-SOURCE.txt", using: :nounzip
+    sha256 "ebf02de5a346a395be7bf6ed7474d78e0b78f1f43523b7f84e0152ff85bbc597"
   end
 
   resource "ccache-source.tar.xz" do
-    url "https://github.com/threadedstack/wmd-releases/releases/download/v0.1.48/ccache-source.tar.xz", using: :nounzip
+    url "https://github.com/threadedstack/wmd-releases/releases/download/v0.1.49/ccache-source.tar.xz", using: :nounzip
     sha256 "4c03bc840699127d16c3f0e6112e3f40ce6a230d5873daa78c60a59c7ef59d25"
   end
 
@@ -112,6 +112,6 @@ class Wmd < Formula
   end
 
   test do
-    assert_match "build c35d2418", shell_output("#{bin}/wmd --version")
+    assert_match "build 6472edd8", shell_output("#{bin}/wmd --version")
   end
 end
